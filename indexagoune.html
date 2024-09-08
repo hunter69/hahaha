@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qst?</title>
+    <link rel="stylesheet" href="styleag.css">
+</head>
+<body>
+
+    <div class="container">
+    <div>
+        <h1 class="ask">
+            أسمع نتاهذي درناها فالكور؟
+        </h1>
+    </div>
+    
+    <div class="gif_container">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/X3tddVM/Screenshot-2023-12-24-125735.png" alt="Screenshot-2023-12-24-125735" border="0"></a>
+    </div>
+    
+
+<div class="buttons">
+
+<button class="btn" id="yesButton" onclick="nextPage()">YES </button=>
+
+<button class="btn" id="noButton" onmouseover="moveButton()"> NO </button>
+
+</div> 
+<script>
+
+    function nextPage()
+    {
+        window.location.href="yesag.html"
+    }
+
+    function moveButton()
+    {
+        var x=Math.random() * ( window.innerWidth - document.getElementById('noButton').offsetWidth);
+        var y= Math.random() * ( window.innerHeight - document.getElementById('noButton').offsetHeight);
+        document.getElementById('noButton').style.left=`${x}px`;
+        document.getElementById('noButton').style.top=`${y}px`;
+    }
+</script>
+
+</div> 
+</body>
+</html>
